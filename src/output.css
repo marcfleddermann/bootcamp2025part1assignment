@@ -378,6 +378,7 @@
     --font-inter: "Inter", sans-serif;
     --text-tiny: 0.625rem;
     --color-green-main: rgb(0, 96, 52);
+    --color-pale-yellow: #f6f6ea80;
   }
 }
 @layer base {
@@ -528,8 +529,20 @@
   .flex {
     display: flex;
   }
+  .min-h-\[80vh\] {
+    min-height: 80vh;
+  }
   .w-\[15rem\] {
     width: 15rem;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-1\/2 {
+    max-width: calc(1/2 * 100%);
+  }
+  .items-center {
+    align-items: center;
   }
   .justify-between {
     justify-content: space-between;
@@ -540,8 +553,14 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
+  }
   .bg-green-main {
     background-color: var(--color-green-main);
+  }
+  .bg-pale-yellow {
+    background-color: var(--color-pale-yellow);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -549,11 +568,25 @@
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
   .font-inter {
     font-family: var(--font-inter);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -562,17 +595,13 @@
   .text-tiny {
     font-size: var(--text-tiny);
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
   }
-  .font-normal {
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -581,6 +610,9 @@
   .text-gray-800 {
     color: var(--color-gray-800);
   }
+  .text-green-main {
+    color: var(--color-green-main);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -588,13 +620,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-white);
-      }
-    }
-  }
-  .hover\:bg-yellow-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-yellow-100);
       }
     }
   }
