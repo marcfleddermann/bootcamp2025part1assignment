@@ -9,5 +9,10 @@
     --color-green-main: rgb(0, 96, 52);
     --color-green-dark: #00341c;
     --color-pale-yellow: #f6f6ea80;
+    --color-pale-yellow-op: #f6f6ea;
     --color-orange-main: rgb(255, 67, 16);
+
+    --menu-bar-width: 40px;
+    --menu-bar-height: 3px;
+    --menu-bar-gap: 5px;
 }
