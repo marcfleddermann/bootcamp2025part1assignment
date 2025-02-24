@@ -15,4 +15,9 @@
     --menu-bar-width: 40px;
     --menu-bar-height: 3px;
     --menu-bar-gap: 5px;
+
+    @keyframes scroll {
+        0% {transform: translateX(0);}
+        100% {transform: translatex(-1000%)}
+    }
 }

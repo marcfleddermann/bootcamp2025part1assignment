@@ -6,8 +6,8 @@
         <script type="text/javascript" src="/js/javascript.js" defer></script>
     </head>
     <body id="body" class="font-inter text-tiny">
-        <header id="header-homepage" class="bg-pale-yellow min-h-[80vh]">
-            <nav class="fixed p-10 pt-5 pb-5 w-full bg-pale-yellow-op">
+        <header id="header-homepage" class="bg-pale-yellow min-h-[80vh] z-1 relative">
+            <nav class="fixed p-10 pt-5 pb-5 w-full bg-pale-yellow-op z-2000">
                 <div class="flex flex-col xl:flex-row justify-between">
                     <div class="flex justify-between">
                         <img src="/img/design-mind-logo.svg" class="w-[15rem]">
@@ -19,14 +19,14 @@
                     </div>
                     
                     <div class="relative overflow-scroll">
-                        <ul id="nav-list" class="hidden xl:flex text-center flex-col xl:flex-row h-[100vh] overflow-scroll xl:h-auto xl:justify-end text-gray-800 font-light justify-start pb-30 xl:pb-0">
+                        <ul id="nav-list" class="hidden xl:flex text-center flex-col xl:flex-row h-dvh overflow-scroll xl:h-auto xl:justify-end text-gray-800 font-light justify-start pt-10 xl:pt-0 pb-30 xl:pb-0">
                             <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Process</a></li>
                             <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Work</a></li>
                             <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Reviews</a></li>
                             <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Pricing</a></li>
                             <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">FAQs</a></li>
                             <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Contact</a></li>
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm font-bold uppercase">Agencies</a></li>
+                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm font-bold uppercase mb-15 xl:mb-0">Agencies</a></li>
                             <li class="bg-green-main rounded-full text-white hover:bg-white hover:text-green-main"><a href="/html/Process.html" class="block p-10 pt-5 pb-5 text-sm font-semibold">Book a call</a></li>
                         </ul>
                 </div>
@@ -39,14 +39,46 @@
                     <div id="hero-text" class="flex flex-col items-start justify-center lg:justify-start">
                         <h1 class="pt-10 lg:pt-0 text-7xl font-medium text-green-main text-center lg:text-left self-center lg:self-start">Design Minded.<br>Growth Focused.</h1>
                         <p class="text-2xl pt-10 pb-20 font-light text-gray-800 text-center lg:text-left self-center">We help in-house marketing teams deliver bold, standout work in today’s fast-paced environment.</p>
-                        <a class="p-10 pt-5 pb-5  text-sm font-semibold bg-green-main rounded-full text-white hover:bg-white hover:text-green-main self-center lg:self-start">See plans</a>
+                        <a class="p-10 pt-5 pb-5  text-sm font-semibold bg-green-main rounded-full text-white hover:bg-white hover:text-green-main self-center lg:self-start cursor-pointer">See plans</a>
                     </div>
                     <img src="/img/hero-image.png" class="block max-w-1/2">
                 </div>
             </section>
 
-            <section id="logos" class="w-full h-32 bg-white">
-
+            <section id="logos" class="w-full bg-white">
+                <div id="slide-track" class="w-full flex overflow-hidden bg-gray-600 gap-30 h-full content-center items-center p-5">
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/handwerk.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/ddb.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/desy.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/kompan.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/euf.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/fl.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/nospa.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/profam.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/vw.png" class="h-full">
+                    </div>
+                    <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
+                        <img src="/img/Logos/woy.png" class="h-full">
+                    </div>
+                    
+                </div>
             </section>
 
             <section id="how-it-works" class="bg-green-dark flex flex-col justify-center">
@@ -150,8 +182,55 @@
 
             <section id="work">
                 <h2 class="text-center p-20 pt-10 font-medium text-6xl text-green-main font-rethink">Explore Our Creative Work</h2>
+                <div id="projects" class="flex justify-center">
+                    <div id="column-1" class="flex flex-col max-w-lg p-10 w-1/2">
+                        <a href="#" class="cursor-pointer block mb-15">
+                            <div>
+                                <div class="overflow-hidden rounded-4xl">
+                                    <img src="/img/projects/bildschirm-fuer-digitale-geraete-editierbar_24972-2052.avif"class="hover:scale-115 duration-200">
+                                </div>
+                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">Holiday Inn</h4>
+                                <p class="text-lg text-gray-500 pt-2 pb-10">Collateral</p>
+                            </div>
+                        </a>
+                        <a href="#" class="cursor-pointer block mb-15">
+                            <div>
+                                <div class="overflow-hidden rounded-4xl">
+                                    <img src="/img/projects/Flyer-Mockup-2.jpg"class="hover:scale-115 duration-200">
+                                </div>
+                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">Example Client</h4>
+                                <p class="text-lg text-gray-500 pt-2 pb-10">Packaging</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="column-2" class="flex flex-col max-w-lg p-10 pt-40 w-1/2">
+                        <a href="#" class="cursor-pointer block mb-15">
+                            <div>
+                                <div class="overflow-hidden rounded-4xl">
+                                    <img src="/img/projects/A1-Portrait-Paper-Mockup-1.jpg"class="hover:scale-115 duration-200">
+                                </div>
+                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">Awesome Design</h4>
+                                <p class="text-lg text-gray-500 pt-2 pb-10">Webdesign</p>
+                            </div>
+                        </a>
+                        <a href="#" class="cursor-pointer block mb-15">
+                            <div>
+                                <div class="overflow-hidden rounded-4xl">
+                                    <img src="/img/projects/Realistic-Business-Card-Mock-Up-full.jpg"class="hover:scale-115 duration-200">
+                                </div>
+                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">Jhon Doe</h4>
+                                <p class="text-lg text-gray-500 pt-2 pb-10">Branding</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
 
             </section>
+
+            <footer>
+
+            </footer>
             
 
         </header>
