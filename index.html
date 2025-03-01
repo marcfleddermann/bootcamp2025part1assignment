@@ -7,8 +7,8 @@
     </head>
     <body id="body" class="font-inter text-tiny">
         <header id="header-homepage" class="bg-pale-yellow min-h-[80vh] z-1 relative">
-            <nav class="fixed p-10 pt-5 pb-5 w-full bg-pale-yellow-op z-2000">
-                <div class="flex flex-col xl:flex-row justify-between">
+            <nav class="fixed w-full p-10 pt-5 pb-5 bg-pale-yellow-op z-2000">
+                <div class="flex flex-col justify-between xl:flex-row">
                     <div class="flex justify-between">
                         <img src="/img/design-mind-logo.svg" class="w-[15rem]">
                         <div id="burger-button" onclick="showNav()" class="flex flex-col justify-center w-(--menu-bar-width) xl:hidden gap-(--menu-bar-gap)">
@@ -19,32 +19,32 @@
                     </div>
                     
                     <div class="relative overflow-scroll">
-                        <ul id="nav-list" class="hidden xl:flex text-center flex-col xl:flex-row h-dvh overflow-scroll xl:h-auto xl:justify-end text-gray-800 font-light justify-start pt-10 xl:pt-0 pb-30 xl:pb-0">
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Process</a></li>
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Work</a></li>
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Reviews</a></li>
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Pricing</a></li>
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">FAQs</a></li>
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm">Contact</a></li>
-                            <li><a href="/html/Process.html" class="block p-7 pt-5 pb-5 text-sm font-bold uppercase mb-15 xl:mb-0">Agencies</a></li>
-                            <li class="bg-green-main rounded-full text-white hover:bg-white hover:text-green-main"><a href="/html/Process.html" class="block p-10 pt-5 pb-5 text-sm font-semibold">Book a call</a></li>
+                        <ul id="nav-list" class="flex-col justify-start hidden pt-10 overflow-scroll font-light text-center text-gray-800 xl:flex xl:flex-row h-dvh xl:h-auto xl:justify-end xl:pt-0 pb-30 xl:pb-0">
+                            <li><a href="/html/Process.html" class="block pt-5 pb-5 text-sm p-7">Process</a></li>
+                            <li><a href="/html/Process.html" class="block pt-5 pb-5 text-sm p-7">Work</a></li>
+                            <li><a href="/html/Process.html" class="block pt-5 pb-5 text-sm p-7">Reviews</a></li>
+                            <li><a href="/html/Process.html" class="block pt-5 pb-5 text-sm p-7">Pricing</a></li>
+                            <li><a href="/html/Process.html" class="block pt-5 pb-5 text-sm p-7">FAQs</a></li>
+                            <li><a href="/html/Process.html" class="block pt-5 pb-5 text-sm p-7">Contact</a></li>
+                            <li><a href="/html/Process.html" class="block pt-5 pb-5 text-sm font-bold uppercase p-7 mb-15 xl:mb-0">Agencies</a></li>
+                            <li class="text-white rounded-full bg-green-main hover:bg-white hover:text-green-main"><a href="/html/Process.html" class="block p-10 pt-5 pb-5 text-sm font-semibold">Book a call</a></li>
                         </ul>
                 </div>
                 </div>
             </nav>
-            <section class="w-full pt-30 p-5 md:p-10 lg:p-20">
-                <div id="hero" class="flex flex-col-reverse lg:flex-row justify-between items-center pt-20">
+            <section class="w-full p-5 pt-30 md:p-10 lg:p-20">
+                <div id="hero" class="flex flex-col-reverse items-center justify-between pt-20 lg:flex-row">
                     <div id="hero-text" class="flex flex-col items-start justify-center lg:justify-start">
-                        <h1 class="pt-10 lg:pt-0 text-7xl font-medium text-green-main text-center lg:text-left self-center lg:self-start">Design Minded.<br>Growth Focused.</h1>
-                        <p class="text-2xl pt-10 pb-20 font-light text-gray-800 text-center lg:text-left self-center">We help in-house marketing teams deliver bold, standout work in today’s fast-paced environment.</p>
-                        <a class="p-10 pt-5 pb-5  text-sm font-semibold bg-green-main rounded-full text-white hover:bg-white hover:text-green-main self-center lg:self-start cursor-pointer">See plans</a>
+                        <h1 class="self-center pt-10 font-medium text-center lg:pt-0 text-7xl text-green-main lg:text-left lg:self-start">Design Minded.<br>Growth Focused.</h1>
+                        <p class="self-center pt-10 pb-20 text-2xl font-light text-center text-gray-800 lg:text-left">We help in-house marketing teams deliver bold, standout work in today’s fast-paced environment.</p>
+                        <a class="self-center p-10 pt-5 pb-5 text-sm font-semibold text-white rounded-full cursor-pointer bg-green-main hover:bg-white hover:text-green-main lg:self-start">See plans</a>
                     </div>
                     <img src="/img/hero-image.png" class="block max-w-1/2">
                 </div>
             </section>
 
             <section id="logos" class="w-full bg-white">
-                <div id="slide-track" class="w-full flex overflow-hidden bg-gray-600 gap-30 h-full content-center items-center p-5">
+                <div id="slide-track" class="flex items-center content-center w-full h-full p-5 overflow-hidden bg-gray-600 gap-30">
                     <div class="w-40 shrink-0 animate-[scroll_60s_linear_infinite]">
                         <img src="/img/Logos/handwerk.png" class="h-full">
                     </div>
@@ -79,97 +79,97 @@
                 </div>
             </section>
 
-            <section id="how-it-works" class="bg-green-dark flex flex-col justify-center pt-0 p-5 md:p-10 lg:p-20 lg:pt-0">
-                <h2 class="text-center pt-30 pb-20 font-normal text-5xl text-white">We're a Transformative <br> Plug-and-Play Design Partner</h2>
-                <div id="cards" class="flex flex-col lg:flex-row pt-0 gap-8">
-                    <div class="w-full lg:w-1/3 bg-white p-10 pt-15 flex flex-col rounded-4xl">
-                        <h3 class="text-4xl text-gray-800 text-center lg:text-left">Pick a Flat Rate Plan</h3>
-                        <p class="text-lg text-gray-500 pt-10 pb-10 text-center lg:text-left">Find the ideal plan tailored to your agency team's needs.</p>
-                        <img src="/img/how-it-works_01.svg" class="max-w-7/10 lg:max-w-full w-full self-center">
+            <section id="how-it-works" class="flex flex-col justify-center p-5 pt-0 bg-green-dark md:p-10 lg:p-20 lg:pt-0">
+                <h2 class="pb-20 text-5xl font-normal text-center text-white pt-30">We're a Transformative <br> Plug-and-Play Design Partner</h2>
+                <div id="cards" class="flex flex-col gap-8 pt-0 lg:flex-row">
+                    <div class="flex flex-col w-full p-10 bg-white lg:w-1/3 pt-15 rounded-4xl">
+                        <h3 class="text-4xl text-center text-gray-800 lg:text-left">Pick a Flat Rate Plan</h3>
+                        <p class="pt-10 pb-10 text-lg text-center text-gray-500 lg:text-left">Find the ideal plan tailored to your agency team's needs.</p>
+                        <img src="/img/how-it-works_01.svg" class="self-center w-full max-w-7/10 lg:max-w-full">
                     </div>
 
-                    <div class="w-full lg:w-1/3 bg-white p-10 pt-15 flex flex-col rounded-4xl">
-                        <h3 class="text-4xl text-gray-800 text-center lg:text-left">Submit Projects</h3>
-                        <p class="text-lg text-gray-500 pt-10 pb-10 text-center lg:text-left">Leverage our managing tools or the ones your team already uses.</p>
-                        <img src="/img/how-it-works_02.svg" class="max-w-7/10 lg:max-w-full w-full self-center">
+                    <div class="flex flex-col w-full p-10 bg-white lg:w-1/3 pt-15 rounded-4xl">
+                        <h3 class="text-4xl text-center text-gray-800 lg:text-left">Submit Projects</h3>
+                        <p class="pt-10 pb-10 text-lg text-center text-gray-500 lg:text-left">Leverage our managing tools or the ones your team already uses.</p>
+                        <img src="/img/how-it-works_02.svg" class="self-center w-full max-w-7/10 lg:max-w-full">
                     </div>
 
-                    <div class="w-full lg:w-1/3 bg-white p-10 pt-15 flex flex-col rounded-4xl">
-                        <h3 class="text-4xl text-gray-800 text-center lg:text-left">Review, Revise, and Approve</h3>
-                        <p class="text-lg text-gray-500 pt-10 pb-10 text-center lg:text-left">Your vision is our mission — we’ll perfect it until you’re truly satisfied.</p>
-                        <img src="/img/how-it-works_03.svg" class="max-w-7/10 lg:max-w-full w-full self-center">
+                    <div class="flex flex-col w-full p-10 bg-white lg:w-1/3 pt-15 rounded-4xl">
+                        <h3 class="text-4xl text-center text-gray-800 lg:text-left">Review, Revise, and Approve</h3>
+                        <p class="pt-10 pb-10 text-lg text-center text-gray-500 lg:text-left">Your vision is our mission — we’ll perfect it until you’re truly satisfied.</p>
+                        <img src="/img/how-it-works_03.svg" class="self-center w-full max-w-7/10 lg:max-w-full">
                     </div>
                 </div>
                 
             </section>
 
             <section id="features" class="p-5 md:p-10 lg:p-20 lg:pt-0">
-                <h2 class="text-center pb-20 pt-30 font-medium text-5xl lg:text-6xl text-green-main">Simple, Powerful, and<br>Crafted for Creative Teams</h2>
-                <div id="feature-items" class="flex flex-wrap p-10 pt-0 justify-around">
-                    <div class="flex flex-col items-center text-center sm:items-start sm:text-left w-full sm:w-1/2 lg:w-1/3 p-10 pt-0">
-                        <div class="bg-orange-main flex justify-center w-1/6 min-w-16 aspect-square rounded-2xl">
+                <h2 class="pb-20 text-5xl font-medium text-center pt-30 lg:text-6xl text-green-main">Simple, Powerful, and<br>Crafted for Creative Teams</h2>
+                <div id="feature-items" class="flex flex-wrap justify-around p-10 pt-0">
+                    <div class="flex flex-col items-center w-full p-10 pt-0 text-center sm:items-start sm:text-left sm:w-1/2 lg:w-1/3">
+                        <div class="flex justify-center w-1/6 bg-orange-main min-w-16 aspect-square rounded-2xl">
                             <img src="/img/icons/camera.svg" class="p-3">
                         </div>
-                        <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">In Sync</h4>
-                        <p class="text-lg text-gray-500 pt-5 pb-10">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
+                        <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">In Sync</h4>
+                        <p class="pt-5 pb-10 text-lg text-gray-500">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center sm:items-start sm:text-left w-full sm:w-1/2 lg:w-1/3 p-10 pt-0">
-                        <div class="bg-orange-main flex justify-center w-1/6 min-w-16 aspect-square rounded-2xl">
+                    <div class="flex flex-col items-center w-full p-10 pt-0 text-center sm:items-start sm:text-left sm:w-1/2 lg:w-1/3">
+                        <div class="flex justify-center w-1/6 bg-orange-main min-w-16 aspect-square rounded-2xl">
                             <img src="/img/icons/camera.svg" class="p-3">
                         </div>
-                        <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">In Sync</h4>
-                        <p class="text-lg text-gray-500 pt-5 pb-10">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
+                        <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">In Sync</h4>
+                        <p class="pt-5 pb-10 text-lg text-gray-500">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center sm:items-start sm:text-left w-full sm:w-1/2 lg:w-1/3 p-10 pt-0">
-                        <div class="bg-orange-main flex justify-center w-1/6 min-w-16 aspect-square rounded-2xl">
+                    <div class="flex flex-col items-center w-full p-10 pt-0 text-center sm:items-start sm:text-left sm:w-1/2 lg:w-1/3">
+                        <div class="flex justify-center w-1/6 bg-orange-main min-w-16 aspect-square rounded-2xl">
                             <img src="/img/icons/camera.svg" class="p-3">
                         </div>
-                        <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">In Sync</h4>
-                        <p class="text-lg text-gray-500 pt-5 pb-10">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
+                        <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">In Sync</h4>
+                        <p class="pt-5 pb-10 text-lg text-gray-500">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center sm:items-start sm:text-left w-full sm:w-1/2 lg:w-1/3 p-10 pt-0">
-                        <div class="bg-orange-main flex justify-center w-1/6 min-w-16 aspect-square rounded-2xl">
+                    <div class="flex flex-col items-center w-full p-10 pt-0 text-center sm:items-start sm:text-left sm:w-1/2 lg:w-1/3">
+                        <div class="flex justify-center w-1/6 bg-orange-main min-w-16 aspect-square rounded-2xl">
                             <img src="/img/icons/camera.svg" class="p-3">
                         </div>
-                        <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">In Sync</h4>
-                        <p class="text-lg text-gray-500 pt-5 pb-10">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
+                        <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">In Sync</h4>
+                        <p class="pt-5 pb-10 text-lg text-gray-500">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center sm:items-start sm:text-left w-full sm:w-1/2 lg:w-1/3 p-10 pt-0">
-                        <div class="bg-orange-main flex justify-center w-1/6 min-w-16 aspect-square rounded-2xl">
+                    <div class="flex flex-col items-center w-full p-10 pt-0 text-center sm:items-start sm:text-left sm:w-1/2 lg:w-1/3">
+                        <div class="flex justify-center w-1/6 bg-orange-main min-w-16 aspect-square rounded-2xl">
                             <img src="/img/icons/camera.svg" class="p-3">
                         </div>
-                        <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">In Sync</h4>
-                        <p class="text-lg text-gray-500 pt-5 pb-10">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
+                        <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">In Sync</h4>
+                        <p class="pt-5 pb-10 text-lg text-gray-500">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center sm:items-start sm:text-left w-full sm:w-1/2 lg:w-1/3 p-10 pt-0">
-                        <div class="bg-orange-main flex justify-center w-1/6 min-w-16 aspect-square rounded-2xl">
+                    <div class="flex flex-col items-center w-full p-10 pt-0 text-center sm:items-start sm:text-left sm:w-1/2 lg:w-1/3">
+                        <div class="flex justify-center w-1/6 bg-orange-main min-w-16 aspect-square rounded-2xl">
                             <img src="/img/icons/camera.svg" class="p-3">
                         </div>
-                        <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">In Sync</h4>
-                        <p class="text-lg text-gray-500 pt-5 pb-10">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
+                        <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">In Sync</h4>
+                        <p class="pt-5 pb-10 text-lg text-gray-500">It’s great to connect face-to-face! Quick 15-minute calls are always welcome.</p>
                     </div>
                 </div>
                 
             </section>
 
             <section id="quote" class="p-5 md:p-10 lg:p-20">
-                <div class="bg-green-dark m-auto pt-20 pb-20 rounded-4xl flex flex-col justify-center items-center">
+                <div class="flex flex-col items-center justify-center pt-20 pb-20 m-auto bg-green-dark rounded-4xl">
                     <img src="/img/icons/quote-02.svg" class="w-1/3 max-w-20">
-                    <p class="w-7/10 text-4xl lg:text-5xl font-light text-white pt-10 font-inter text-center pb-20">Design Mind handles our creative
+                    <p class="pt-10 pb-20 text-4xl font-light text-center text-white w-7/10 lg:text-5xl font-inter">Design Mind handles our creative
                         work overflow, allowing us to focus on
                         new client opportunities.</p>
                     <img src="/img/icons/magneti.svg" class="w-1/3 max-w-40">
                 </div>
             </section>
 
-            <section id="list" class="pb-40 p-5 md:p-10 lg:p-20">
-                <h2 class="text-center md:text-left p-5 pt-10 font-medium text-5xl lg:text-6xl text-grey-800 font-rethink w-full lg:w-6/10">Full Support for Your Creative Project with Our Suite of Services</h2>
-                <div id="big-list" class="pt-0 pl-10 lg:pl-40 pr-20">
+            <section id="list" class="p-5 pb-40 md:p-10 lg:p-20">
+                <h2 class="w-full p-5 pt-10 text-5xl font-medium text-center md:text-left lg:text-6xl text-grey-800 font-rethink lg:w-6/10">Full Support for Your Creative Project with Our Suite of Services</h2>
+                <div id="big-list" class="pt-0 pl-10 pr-20 lg:pl-40">
                     <p class="text-left p-20 pt-10 pb-3 pl-0 font-medium text-4xl lg:text-[3.5rem] text-green-main font-rethink border-b-1 border-green-main">Branding</p>
                     <p class="text-left p-20 pt-10 pb-3 pl-0 font-medium text-4xl lg:text-[3.5rem] text-green-main font-rethink border-b-1 border-green-main">Website & Email Design</p>
                     <p class="text-left p-20 pt-10 pb-3 pl-0 font-medium text-4xl lg:text-[3.5rem] text-green-main font-rethink border-b-1 border-green-main">Ads & Social Media</p>
@@ -179,45 +179,45 @@
             </section>
 
             <section id="work" class="p-5 md:p-10 lg:p-20 lg:pt-0">
-                <h2 class="text-center p-5 md:p-10 lg:p-20 pt-10 font-medium text-5xl lg:text-6xl text-green-main font-rethink">Explore Our Creative Work</h2>
-                <div id="projects" class="flex justify-center flex-wrap lg:flex-nowrap">
-                    <div id="column-1" class="flex flex-col max-w-2xl p-10 pb-0 lg:pb-10 w-full lg:w-1/2">
-                        <a href="#" class="cursor-pointer block mb-15">
+                <h2 class="p-5 pt-10 text-5xl font-medium text-center md:p-10 lg:p-20 lg:text-6xl text-green-main font-rethink">Explore Our Creative Work</h2>
+                <div id="projects" class="flex flex-wrap justify-center lg:flex-nowrap">
+                    <div id="column-1" class="flex flex-col w-full max-w-2xl p-10 pb-0 lg:pb-10 lg:w-1/2">
+                        <a href="#" class="block cursor-pointer mb-15">
                             <div>
                                 <div class="overflow-hidden rounded-4xl">
-                                    <img src="/img/projects/bildschirm-fuer-digitale-geraete-editierbar_24972-2052.avif"class="hover:scale-115 duration-200">
+                                    <img src="/img/projects/bildschirm-fuer-digitale-geraete-editierbar_24972-2052.avif"class="duration-200 hover:scale-115">
                                 </div>
-                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">Holiday Inn</h4>
-                                <p class="text-lg text-gray-500 pt-2 pb-10">Collateral</p>
+                                <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">Holiday Inn</h4>
+                                <p class="pt-2 pb-10 text-lg text-gray-500">Collateral</p>
                             </div>
                         </a>
-                        <a href="#" class="cursor-pointer block mb-15">
+                        <a href="#" class="block cursor-pointer mb-15">
                             <div>
                                 <div class="overflow-hidden rounded-4xl">
-                                    <img src="/img/projects/Flyer-Mockup-2.jpg"class="hover:scale-115 duration-200">
+                                    <img src="/img/projects/Flyer-Mockup-2.jpg"class="duration-200 hover:scale-115">
                                 </div>
-                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">Example Client</h4>
-                                <p class="text-lg text-gray-500 pt-2 pb-10">Packaging</p>
+                                <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">Example Client</h4>
+                                <p class="pt-2 pb-10 text-lg text-gray-500">Packaging</p>
                             </div>
                         </a>
                     </div>
-                    <div id="column-2" class="flex flex-col max-w-2xl p-10 pt-0 lg:pt-10 w-full lg:mt-40 lg:w-1/2">
-                        <a href="#" class="cursor-pointer block mb-15">
+                    <div id="column-2" class="flex flex-col w-full max-w-2xl p-10 pt-0 lg:pt-10 lg:mt-40 lg:w-1/2">
+                        <a href="#" class="block cursor-pointer mb-15">
                             <div>
                                 <div class="overflow-hidden rounded-4xl">
-                                    <img src="/img/projects/A1-Portrait-Paper-Mockup-1.jpg"class="hover:scale-115 duration-200">
+                                    <img src="/img/projects/A1-Portrait-Paper-Mockup-1.jpg"class="duration-200 hover:scale-115">
                                 </div>
-                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">Awesome Design</h4>
-                                <p class="text-lg text-gray-500 pt-2 pb-10">Webdesign</p>
+                                <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">Awesome Design</h4>
+                                <p class="pt-2 pb-10 text-lg text-gray-500">Webdesign</p>
                             </div>
                         </a>
-                        <a href="#" class="cursor-pointer block mb-15">
+                        <a href="#" class="block cursor-pointer mb-15">
                             <div>
                                 <div class="overflow-hidden rounded-4xl">
-                                    <img src="/img/projects/Realistic-Business-Card-Mock-Up-full.jpg"class="hover:scale-115 duration-200">
+                                    <img src="/img/projects/Realistic-Business-Card-Mock-Up-full.jpg"class="duration-200 hover:scale-115">
                                 </div>
-                                <h4 class="text-3xl font-medium text-gray-600 pt-10 font-rethink">John Doe</h4>
-                                <p class="text-lg text-gray-500 pt-2 pb-10">Branding</p>
+                                <h4 class="pt-10 text-3xl font-medium text-gray-600 font-rethink">John Doe</h4>
+                                <p class="pt-2 pb-10 text-lg text-gray-500">Branding</p>
                             </div>
                         </a>
                     </div>
